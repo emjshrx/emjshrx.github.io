@@ -1,3 +1,4 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
 body {
     margin: 0px ;
     padding : 0px;
@@ -40,7 +41,10 @@ header {
     transform: translateY(30%);
     vertical-align: middle;
 }
-
+a {
+    text-decoration: none;
+    color:inherit;
+}
 .subtext{
     position: absolute;
     font-size: 2rem;
@@ -48,6 +52,12 @@ header {
     width:100%;
     color: rgb(90, 83, 72);
     text-align: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
 }
 main {
     
@@ -68,10 +78,7 @@ nav{
     position: fixed;
     text-align: left;
     font-size: 1.5em;
-
-    
-
-}
+    }
 ul{
     list-style-type: none;
     margin: 0;
@@ -85,8 +92,9 @@ ul{
 ul > li{
     padding-right: 10px;
     float:left;
-    font-size: 1rem;
+    font-size: 0.8rem;
     transition: color 0.5s;
+    text-transform: uppercase;
 }
 .hbutton:hover nav{
     display:block !important;
