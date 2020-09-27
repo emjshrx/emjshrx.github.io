@@ -24,7 +24,7 @@ header {
 }
 .name{
     position: fixed;
-    font-family: 'Dosis', sans-serif;;
+    font-family: 'Dosis', sans-serif;
     color: rgb(231, 177, 0);
     font-size: 2em;
     right:10px;
@@ -33,13 +33,18 @@ header {
 }
 
 .jobs {
-    min-height: auto;
-    position: relative;
     text-align: center;
-    flex-grow: 1;
     font-size: 3em;
-    transform: translateY(30%);
-    vertical-align: middle;
+}
+
+.isa{
+    font-size: 4em;
+    font-weight: bold;
+    display:flex;
+    flex-direction: row;
+    color: black;
+    text-shadow: 2px 2px 4px rgb(231, 177, 0);
+
 }
 a {
     text-decoration: none;
@@ -47,7 +52,7 @@ a {
 }
 .subtext{
     position: absolute;
-    font-size: 2rem;
+    font-size: 2em;
     bottom:10%;
     width:100%;
     color: rgb(90, 83, 72);
@@ -60,8 +65,11 @@ a {
     user-select: none;
 }
 main {
-    
-    min-height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80%;
+    flex-direction: column;
 }
 .job{
     display: block;
@@ -103,12 +111,12 @@ ul > li{
 .job:hover {
     color: rgb(231, 177, 0);
     font-size: 1.5em;
-    cursor:pointer;
 }
 
 li:hover {
-    color: rgb(250, 149, 149);
+    color: rgb(136, 0, 0);
     cursor:pointer;
+    text-shadow: 2px 2px 4px #202020;
 }
 footer{
     background-image: linear-gradient(rgb(27, 0, 0),rgb(10, 0, 0));
