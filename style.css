@@ -108,7 +108,7 @@ ul > li{
     text-transform: uppercase;
 }
 nav > ul > li {
-    clear: both;
+    
     padding-left: 10px;
 }
 .hbutton:hover nav{
@@ -150,10 +150,13 @@ footer{
         transform: translateX(-100%);
         transition: transform 0.8s ease-out;
     }
+    nav > ul > li {
+        clear: both;
+    }
     svg:hover {
         fill:rgb(250, 149, 149);
     }
-    svg:hover ~ nav{
+    svg:active ~ nav{
         transform: translateX(0);
     } 
     li {
