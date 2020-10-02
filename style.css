@@ -13,16 +13,16 @@ body {
 }
 header {
     background-color:transparent;
-    padding:10px;
     position: fixed;
     width:100%
 }
 
 .hamburger{
-    padding-top: 10px;
+    padding: 15px 10px 0 10px;
     display:none;
 }
 .name{
+    padding: 10px;
     position: fixed;
     font-family: 'Dosis', sans-serif;
     color: rgb(231, 177, 0);
@@ -35,9 +35,13 @@ header {
 .jobs {
     text-align: center;
     font-size: 3em;
+    position: absolute;
+    top:20%;
 }
 
 .isa{
+    position: absolute;
+    top : 10%;
     font-size: 4em;
     font-weight: bold;
     display:flex;
@@ -85,7 +89,7 @@ nav{
     display:inline;
     position: fixed;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1rem !important;
     }
 ul{
     list-style-type: none;
@@ -100,9 +104,12 @@ ul{
 ul > li{
     padding-right: 10px;
     float:left;
-    font-size: 0.8rem;
     transition: color 0.5s;
     text-transform: uppercase;
+}
+nav > ul > li {
+    clear: both;
+    padding-left: 10px;
 }
 .hbutton:hover nav{
     display:block !important;
@@ -139,9 +146,16 @@ footer{
     svg{
         fill:white;
     }
+    nav{
+        transform: translateX(-100%);
+        transition: transform 0.8s ease-out;
+    }
     svg:hover {
         fill:rgb(250, 149, 149);
     }
+    svg:hover ~ nav{
+        transform: translateX(0);
+    } 
     li {
         display: block;
         background-color: black;
