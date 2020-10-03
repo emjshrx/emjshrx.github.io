@@ -17,6 +17,7 @@
   text-shadow: 2px 5px 2px #000000;
   color: rgb(218, 218, 218);
   display: flex;
+  font-weight: bold;
 }
 .ClockFace{
   position: relative;
@@ -89,5 +90,35 @@
   transform: rotate(90deg);
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
  }
+ 
+ .ChangeButton{
+  width: 100px;
+  height: 50px;
+  background: #1e283d;
+  position: relative;
+  color: white;
+  margin: 25px;
+  border-radius: 32px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0 5px 5px black;
+  border-color: transparent;
+  border: none;
+ }
+
+ .ChangeButton:hover {
+   filter: brightness(110%);
+ }
+
+ .ChangeButton:active {
+  box-shadow: inset 0 5px 5px black;
+ }
+
+ .ChangeButton:focus {
+   border: none;
+   outline : none ;
+ }
+
  
 

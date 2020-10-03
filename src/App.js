@@ -1,12 +1,24 @@
 import React from 'react';
-import clockface from './clockface.png';
 import './App.css';
 
 function App() {
   return (
     <div className="Clock">
       <header className="Clock-header">WORLD CLOCK</header>
-      <div className="ClockContainer">
+      <ClockContainer />
+      <div className="Buttons">
+        <ChangeButton type="Local" />
+        <ChangeButton type="England" />
+        <ChangeButton type="Budapest" />
+        <ChangeButton type="Bengaluru" />
+      </div>
+    </div>
+  );
+}
+
+function ClockContainer() {
+  return (
+    <div className="ClockContainer">
         <div className="ClockFace">
           <div className="Hour">
             <div className="hr"></div>
@@ -20,8 +32,17 @@ function App() {
           </div>
         </div> 
       </div>   
-    </div>
   );
 }
+
+function ChangeButton(props) {
+  return (
+    <button className="ChangeButton">{props.type}</button>
+  );
+}
+
+//http://worldtimeapi.org/api/timezone/Europe/Budapest
+//http://worldtimeapi.org/api/timezone/Europe/London
+//http://worldtimeapi.org/api/timezone/Asia/Kolkata
 
 export default App;
