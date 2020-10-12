@@ -1,14 +1,23 @@
 
 
+.ClockContainer{
+  position: relative;
+  width: 70vmin;
+}
+
+.ClockContainer:before {
+	content: "";
+	float: left;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
 .Clock {
   background-color: #1e283d;
-  min-height: 100vh;
-  max-height: 100vh;
+  height: 100vh;
   font-size: calc(10px + 2vmin);
   color: white;
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
 }
@@ -21,16 +30,16 @@
 }
 .ClockFace{
   position: relative;
-  top: 50%;
-  width: 500px;
-  height: 500px;
+  /*top: 50%;*/
+  float: left;
+  width: 100%;
+  height: 100%;
   border: 1px solid  #1e2535;
   border-radius: 50%;
   box-shadow:         inset 0 -10px 10px #233152,
                             0 -10px 10px #233152,
                       inset 0 10px 10px #131313,
                             0 10px 10px #1f1f1f;
-  margin: 10px;
   background: url(./clockface.png);
   background-position: center;
   background-size: cover;
@@ -40,48 +49,51 @@
   content: '';
 }
  .Hour {
-  width: 100px;
+  width: 10vmin;
   right: 50%;
-  height: 12px;
-  background: #5a2828;
+  height: 2vmin;
+  background: #ff7070;
   position: absolute;
   top: 50%;
   border-radius: 6px;
   transform-origin: 100%;
-  transform: rotate(180deg);
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  transform: rotate(90deg);
+  box-shadow: 0 5px 5px black;
+  transition: transform 1s ease-in-out;
  }
 
  .Minute {
-  width: 150px;
+  width: 20vmin;
   right: 50%;
-  height: 6px;
-  background: #5a2828;
+  height: 1.5vmin;
+  background: #ff7070;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  box-shadow: 0 5px 5px black;
+  transition: transform 1s ease-in-out;
+ }
+
+ .Second {
+  width: 25vmin;
+  right: 50%;
+  height: 1vmin;
+  background: #d8d8d8;
   position: absolute;
   top: 50%;
   border-radius: 6px;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
- }
-
- .Second {
-  width: 200px;
-  right: 50%;
-  height: 6px;
-  background: #d8d8d8;
-  position: absolute;
-  top: 50%;
-  border-radius: 6px;
-  transform-origin: 100%;
-  transform: rotate(45deg);
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  box-shadow: 0 5px 5px black;
  }
 
  .Knob {
-  width: 30px;
+  width: 5vmin;
   right: 50%;
-  height: 30px;
+  height: 5vmin;
   background: #ffffff;
   position: absolute;
   top: 50%;
@@ -93,10 +105,11 @@
  
  .ChangeButton{
   width: 100px;
+  font-family: 'Lato', sans-serif;
   height: 50px;
-  background: #1e283d;
+  background: #2f3e5f;
   position: relative;
-  color: white;
+  color: #d8d8d8;
   margin: 25px;
   border-radius: 32px;
   text-align: center;
@@ -108,9 +121,13 @@
  }
 
  .ChangeButton:hover {
-   filter: brightness(110%);
+   filter: brightness(130%);
  }
-
+ .Buttons{
+   display:flex;
+   flex-wrap: wrap;
+  justify-content: center;
+ }
  .ChangeButton:active {
   box-shadow: inset 0 5px 5px black;
  }
