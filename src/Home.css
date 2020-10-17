@@ -133,7 +133,7 @@ footer{
     position: absolute;
     bottom: 0;
     width:100%;
-    opacity: 90% !important;
+    opacity: 0.9 !important;
 
 }
 .foottext{

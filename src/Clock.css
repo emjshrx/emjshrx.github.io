@@ -5,7 +5,7 @@
   filter: invert();
 }
 .Clock > a > img:hover{
-  opacity: 50%;
+  opacity: 0.5;
 }
 .ClockContainer{
   position: relative;
