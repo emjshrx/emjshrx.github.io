@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Clock.css';
+import homebutton from './images/homebutton.svg'
 
 function Clock() {
   const [hourHand,setHourhand] = useState(0);
@@ -66,6 +67,7 @@ function Clock() {
       <header className="Clock-header">WORLD CLOCK</header>
       <ClockContainer hands={[hourHand,minuteHand,secondHand]} setters={[setSecondhand,setMinutehand,setHourhand]}/>
       <ButtonSet setLocation={setLocation} Locationactive={locationactive}/>
+      <a href="/#/"><img src={homebutton}/></a>
     </div>
   );
 }

@@ -9,6 +9,7 @@ body {
     color : white;
     min-height: 100vh;
     background-position-x: center;
+    overflow: hidden;
 
 }
 header {
@@ -132,7 +133,7 @@ footer{
     position: absolute;
     bottom: 0;
     width:100%;
-    opacity: 90%;
+    opacity: 90% !important;
 
 }
 .foottext{
@@ -156,8 +157,9 @@ footer{
     }
     svg:hover {
         fill:rgb(250, 149, 149);
+
     }
-    svg:active ~ nav{
+    svg:hover ~ nav{
         transform: translateX(0);
     } 
     li {

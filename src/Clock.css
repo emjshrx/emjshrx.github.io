@@ -1,5 +1,12 @@
 
-
+.Clock > a{
+  height:5vmin;
+  width:5vmin;
+  filter: invert();
+}
+.Clock > a > img:hover{
+  opacity: 50%;
+}
 .ClockContainer{
   position: relative;
   width: 70vmin;
@@ -51,9 +58,9 @@
   content: '';
 }
  .Hour {
-  width: 10vmin;
+  width: 13vmin;
   right: 50%;
-  height: 2vmin;
+  height: 2.5vmin;
   background: #ff7070;
   position: absolute;
   top: 50%;
@@ -117,13 +124,14 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-  box-shadow: 0 5px 5px black;
+  box-shadow:     0 -5px 5px #233152,
+                  0 5px 5px #1f1f1f;
   border-color: transparent;
   border: none;
  }
 
  .ChangeButton:hover {
-   filter: brightness(130%);
+  background: #4c6499;
  }
  .Buttons{
    display:flex;
