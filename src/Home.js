@@ -25,11 +25,11 @@ export default function Home(){
             <main>
                 <div class="isa">I am a</div>
                 <div class="jobs">
-                    <div class="job" ><a href='/#/clock'>timekeeper.</a></div>
-                    <div class="job" ><a href='https://drive.google.com/drive/folders/0B8Tu2WmoMEAjOTJyUUxMRXk2Y3M?usp=sharing' target="_blank">designer.</a></div>
-                    <div class="job" ><a href='https://www.youtube.com/channel/UCap13UTaDSzgB4u-7gyuQtw' target="_blank">critic.</a></div>
-                    <div class="job" ><a href='https://drive.google.com/drive/folders/0B8Tu2WmoMEAjOTJyUUxMRXk2Y3M?usp=sharing' target="_blank">editor.</a></div>
-                    <div class="job" ><a href='https://github.com/emjshrx/' target="_blank">hacker.</a></div>
+                    <div class="job" ><a href='/#/clock'>timekeeper</a></div>
+                    <div class="job" ><a href='https://drive.google.com/drive/folders/0B8Tu2WmoMEAjOTJyUUxMRXk2Y3M?usp=sharing' target="_blank">designer</a></div>
+                    <div class="job" ><a href='https://www.youtube.com/channel/UCap13UTaDSzgB4u-7gyuQtw' target="_blank">critic</a></div>
+                    <div class="job" ><a href='https://drive.google.com/drive/folders/0B8Tu2WmoMEAjOTJyUUxMRXk2Y3M?usp=sharing' target="_blank">editor</a></div>
+                    <div class="job" ><a href='https://github.com/emjshrx/' target="_blank">hacker</a></div>
                     
                 </div>
                 
